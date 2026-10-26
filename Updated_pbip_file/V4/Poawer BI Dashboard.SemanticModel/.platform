@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Poawer BI Dashboard"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "73df2bdd-fe52-4b6d-bf85-35e4bee43dd2"
+  }
+}

@@ -1,0 +1,145 @@
+table Employee_Master_TBI
+	lineageTag: a1a36b53-a42a-4f32-b7a0-cafd45afbac9
+
+	column EMP_ID
+		dataType: string
+		lineageTag: ed798c59-cdcb-4439-ac68-939c3a0985de
+		summarizeBy: none
+		sourceColumn: EMP_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column EMP_NAME
+		dataType: string
+		lineageTag: 063dc427-b4b5-4993-a878-d12e96b54fca
+		summarizeBy: none
+		sourceColumn: EMP_NAME
+
+		annotation SummarizationSetBy = Automatic
+
+	column EMP_GENDER
+		dataType: string
+		lineageTag: 7a714b43-9008-4d05-b727-586e567ebf3a
+		summarizeBy: none
+		sourceColumn: EMP_GENDER
+
+		annotation SummarizationSetBy = Automatic
+
+	column JOIN_DATE
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 01b472ea-9bff-4a12-bae6-788db0214815
+		summarizeBy: none
+		sourceColumn: JOIN_DATE
+
+		variation Variation
+			isDefault
+			relationship: b5047505-9873-49ee-8e96-41bc02e50032
+			defaultHierarchy: LocalDateTable_4a4c9333-9c19-40a9-aadf-499b17a63dfa.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column BRANCH_NAME
+		dataType: string
+		lineageTag: 26022374-0f5c-471b-a5a3-21467e67932f
+		summarizeBy: none
+		sourceColumn: BRANCH_NAME
+
+		annotation SummarizationSetBy = Automatic
+
+	column DEPARTMENT_NAME
+		dataType: string
+		lineageTag: 6cf96277-1e67-4cc5-ada1-b49eb2bc913d
+		summarizeBy: none
+		sourceColumn: DEPARTMENT_NAME
+
+		annotation SummarizationSetBy = Automatic
+
+	column DESIGNATION
+		dataType: string
+		lineageTag: d74df012-ed58-4fcc-ab50-5e6146b21ca3
+		summarizeBy: none
+		sourceColumn: DESIGNATION
+
+		annotation SummarizationSetBy = Automatic
+
+	column Employee_Category
+		dataType: string
+		lineageTag: c2fb5b69-6764-4b6c-bf32-0e22f5fd187e
+		summarizeBy: none
+		sourceColumn: Employee_Category
+
+		annotation SummarizationSetBy = Automatic
+
+	column Resident_Type
+		dataType: string
+		lineageTag: 18354a34-5737-4bcc-98e7-0650a7391a0c
+		summarizeBy: none
+		sourceColumn: Resident_Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column LAST_WORKING_DATE
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 8ea0b926-ea44-4862-a76d-380332fa4bde
+		summarizeBy: none
+		sourceColumn: LAST_WORKING_DATE
+
+		variation Variation
+			isDefault
+			relationship: 1c20c06d-0c72-4cee-aa8d-f33e99a3b7cc
+			defaultHierarchy: LocalDateTable_7996028a-a2a9-4df9-80ee-a0b15196a970.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column BIRTH_DATE
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 1f47683d-8e43-4122-b62f-c9b9feb94189
+		summarizeBy: none
+		sourceColumn: BIRTH_DATE
+
+		variation Variation
+			isDefault
+			relationship: 3f779ec3-2c1f-49fe-afa7-2ba10908d390
+			defaultHierarchy: LocalDateTable_dfcd8e9e-cc98-4404-b9c4-6052cec8111b.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column MARITAL_STATUS
+		dataType: string
+		lineageTag: 87262469-9cdb-4e64-ad3b-06261a4f302f
+		summarizeBy: none
+		sourceColumn: MARITAL_STATUS
+
+		annotation SummarizationSetBy = Automatic
+
+	column RELIGION
+		dataType: string
+		lineageTag: 5a03eb05-ee59-4c9f-9b9e-8a55c78d9268
+		summarizeBy: none
+		sourceColumn: RELIGION
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Employee_Master_TBI = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("172.19.225.120,11433", "UAT_TBI_DASHBOARD"),
+				    dbo_Employee_Master_TBI = Source{[Schema="dbo",Item="Employee_Master_TBI"]}[Data],
+				    #"Changed Type" = Table.TransformColumnTypes(dbo_Employee_Master_TBI,{{"JOIN_DATE", type date}, {"LAST_WORKING_DATE", type date}, {"BIRTH_DATE", type date}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,72 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
+  "name": "eef17a59eb51c8d07db2",
+  "position": {
+    "x": 1080.7086614173229,
+    "y": 400.3937007874016,
+    "z": 6001,
+    "height": 154.13385826771653,
+    "width": 253.34645669291339,
+    "tabOrder": 6001
+  },
+  "visual": {
+    "visualType": "slicer",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Employee_Master_TBI"
+                    }
+                  },
+                  "Property": "DEPARTMENT_NAME"
+                }
+              },
+              "queryRef": "Employee_Master_TBI.DEPARTMENT_NAME",
+              "nativeQueryRef": "DEPARTMENT_NAME",
+              "active": true
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "data": [
+        {
+          "properties": {
+            "mode": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Basic'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "6b949580e148627ba01a",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Employee_Master_TBI"
+              }
+            },
+            "Property": "DEPARTMENT_NAME"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
+  }
+}

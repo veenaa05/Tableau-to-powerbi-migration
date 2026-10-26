@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Complex HRMS dashboard"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "7349e65b-a4fa-4bb7-a488-f069d7fdd03b"
+  }
+}

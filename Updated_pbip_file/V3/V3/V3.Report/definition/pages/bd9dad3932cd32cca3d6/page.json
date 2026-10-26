@@ -1,0 +1,8 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
+  "name": "bd9dad3932cd32cca3d6",
+  "displayName": "Employee Salary Sheet",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280
+}

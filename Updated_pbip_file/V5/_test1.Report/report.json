@@ -1,0 +1,96 @@
+{
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.65\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{\"relationships\":[{\"source\":\"6c9734eab7c4003a4d5b\",\"target\":\"7fe3e7760137b6e2b40d\",\"type\":3},{\"source\":\"6c9734eab7c4003a4d5b\",\"target\":\"d9234895012be480671a\",\"type\":3},{\"source\":\"6c9734eab7c4003a4d5b\",\"target\":\"96fc6bed471733305ee0\",\"type\":3},{\"source\":\"b167d43105dd7565b1d3\",\"target\":\"7fe3e7760137b6e2b40d\",\"type\":3},{\"source\":\"b167d43105dd7565b1d3\",\"target\":\"d9234895012be480671a\",\"type\":1},{\"source\":\"b167d43105dd7565b1d3\",\"target\":\"728b7690b8530054dd3c\",\"type\":3},{\"source\":\"b167d43105dd7565b1d3\",\"target\":\"96fc6bed471733305ee0\",\"type\":3},{\"source\":\"b167d43105dd7565b1d3\",\"target\":\"6c9734eab7c4003a4d5b\",\"type\":3}]}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "2e8181cfb8574b1d2b4a",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"2d3b2bc185cc35c0d954\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1011.358024691358,\"y\":26.33744855967078,\"z\":6,\"width\":252.8395061728395,\"height\":98.32647462277092,\"tabOrder\":6}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Employee_Master_TBI.JOIN_DATE\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"Employee_Master_TBI\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"JOIN_DATE\"},\"Name\":\"Employee_Master_TBI.JOIN_DATE\",\"NativeReferenceName\":\"Join Date\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"JOIN_DATE\"}}}]},\"columnProperties\":{\"Employee_Master_TBI.JOIN_DATE\":{\"displayName\":\"Join Date\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"startDate\":{\"expr\":{\"Literal\":{\"Value\":\"datetime'2016-07-20T00:00:00'\"}}},\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Between'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"Employee_Master_TBI\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Comparison\":{\"ComparisonKind\":2,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"JOIN_DATE\"}},\"Right\":{\"Literal\":{\"Value\":\"datetime'2016-07-20T00:00:00'\"}}}}}]}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 98.33,
+          "width": 252.84,
+          "x": 1011.36,
+          "y": 26.34,
+          "z": 6.00
+        },
+        {
+          "config": "{\"name\":\"6c9734eab7c4003a4d5b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1011.358024691358,\"y\":305.51440329218104,\"z\":7,\"width\":252.8395061728395,\"height\":193.14128943758573,\"tabOrder\":7}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Employee_Master_TBI.DEPARTMENT_NAME\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"Employee_Master_TBI\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"DEPARTMENT_NAME\"},\"Name\":\"Employee_Master_TBI.DEPARTMENT_NAME\",\"NativeReferenceName\":\"DEPARTMENT_NAME\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}},\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"general\":[{\"properties\":{}}],\"selection\":[{\"properties\":{\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 193.14,
+          "width": 252.84,
+          "x": 1011.36,
+          "y": 305.51,
+          "z": 7.00
+        },
+        {
+          "config": "{\"name\":\"728b7690b8530054dd3c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":675.99451303155,\"y\":26.33744855967078,\"z\":2,\"width\":300.2469135802469,\"height\":300.2469135802469,\"tabOrder\":2}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Employee_Master_TBI.DEPARTMENT_NAME\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Salary_TBI.GROSS_SALARY)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"Employee_Master_TBI\",\"Entity\":\"Employee_Master_TBI\",\"Type\":0},{\"Name\":\"Salary_TBI\",\"Entity\":\"Salary_TBI\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"Employee_Master_TBI\"}},\"Property\":\"DEPARTMENT_NAME\"},\"Name\":\"Employee_Master_TBI.DEPARTMENT_NAME\",\"NativeReferenceName\":\"DEPARTMENT_NAME\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"Salary_TBI\"}},\"Property\":\"GROSS_SALARY\"}},\"Function\":0},\"Name\":\"Sum(Salary_TBI.GROSS_SALARY)\",\"NativeReferenceName\":\"Sum of GROSS_SALARY\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"Salary_TBI\"}},\"Property\":\"GROSS_SALARY\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"valueAxis\":[{\"properties\":{\"gridlineShow\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"lineStyles\":[{\"properties\":{\"showMarker\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Department Wise Total Salary'\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"underline\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 300.25,
+          "width": 300.25,
+          "x": 675.99,
+          "y": 26.34,
+          "z": 2.00
+        },
+        {
+          "config": "{\"name\":\"7fe3e7760137b6e2b40d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":28.093278463648833,\"y\":26.33744855967078,\"z\":0,\"width\":300,\"height\":300.2469135802469,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Employee_Master_TBI.DEPARTMENT_NAME\",\"active\":true}],\"Series\":[{\"queryRef\":\"Employee_Master_TBI.EMP_GENDER\"}],\"Y\":[{\"queryRef\":\"CountNonNull(Employee_Master_TBI.EMP_ID)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"Employee_Master_TBI\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"DEPARTMENT_NAME\"},\"Name\":\"Employee_Master_TBI.DEPARTMENT_NAME\",\"NativeReferenceName\":\"Department\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"EMP_GENDER\"},\"Name\":\"Employee_Master_TBI.EMP_GENDER\",\"NativeReferenceName\":\"Gender\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"EMP_ID\"}},\"Function\":5},\"Name\":\"CountNonNull(Employee_Master_TBI.EMP_ID)\",\"NativeReferenceName\":\"Count Of Employee Id\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"EMP_ID\"}},\"Function\":5}}}]},\"columnProperties\":{\"Employee_Master_TBI.DEPARTMENT_NAME\":{\"displayName\":\"Department\"},\"Employee_Master_TBI.EMP_GENDER\":{\"displayName\":\"Gender\"},\"CountNonNull(Employee_Master_TBI.EMP_ID)\":{\"displayName\":\"Count Of Employee Id\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"totals\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"valueAxis\":[{\"properties\":{\"gridlineShow\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F4CA32'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Employee_Master_TBI\"}},\"Property\":\"EMP_GENDER\"}},\"Right\":{\"Literal\":{\"Value\":\"'Male'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FF670F'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Employee_Master_TBI\"}},\"Property\":\"EMP_GENDER\"}},\"Right\":{\"Literal\":{\"Value\":\"'Female'\"}}}}}]}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Department Wise Employee'\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'\"}}},\"underline\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 300.25,
+          "width": 300.00,
+          "x": 28.09,
+          "y": 26.34,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"96fc6bed471733305ee0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":28.093278463648833,\"y\":359.94513031550065,\"z\":3,\"width\":948.148148148148,\"height\":300.2469135802469,\"tabOrder\":3}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Employee_Master_TBI.EMP_NAME\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Salary_TBI.GROSS_SALARY)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"Employee_Master_TBI\",\"Type\":0},{\"Name\":\"s\",\"Entity\":\"Salary_TBI\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"EMP_NAME\"},\"Name\":\"Employee_Master_TBI.EMP_NAME\",\"NativeReferenceName\":\"EMP NAME\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"GROSS_SALARY\"}},\"Function\":0},\"Name\":\"Sum(Salary_TBI.GROSS_SALARY)\",\"NativeReferenceName\":\" GROSS SALARY\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"GROSS_SALARY\"}},\"Function\":0}}}]},\"columnProperties\":{\"Employee_Master_TBI.EMP_NAME\":{\"displayName\":\"EMP NAME\"},\"Sum(Salary_TBI.GROSS_SALARY)\":{\"displayName\":\" GROSS SALARY\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#D31F7C'\"}}}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Employee Gross Salary > 20000'\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"underline\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[{\"name\":\"935445225c1d087beded\",\"expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Salary_TBI\"}},\"Property\":\"GROSS_SALARY\"}},\"Function\":0}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Salary_TBI\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Comparison\":{\"ComparisonKind\":1,\"Left\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"GROSS_SALARY\"}},\"Function\":0}},\"Right\":{\"Literal\":{\"Value\":\"20000L\"}}}}}]},\"type\":\"Advanced\",\"howCreated\":0}]",
+          "height": 300.25,
+          "width": 948.15,
+          "x": 28.09,
+          "y": 359.95,
+          "z": 3.00
+        },
+        {
+          "config": "{\"name\":\"b167d43105dd7565b1d3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1011.358024691358,\"y\":152.75720164609052,\"z\":4,\"width\":252.8395061728395,\"height\":129.93141289437585,\"tabOrder\":4}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Employee_Master_TBI.EMP_GENDER\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"Employee_Master_TBI\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"EMP_GENDER\"},\"Name\":\"Employee_Master_TBI.EMP_GENDER\",\"NativeReferenceName\":\"Emp Gender\"}]},\"columnProperties\":{\"Employee_Master_TBI.EMP_GENDER\":{\"displayName\":\"Emp Gender\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}},\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"general\":[{\"properties\":{}}],\"selection\":[{\"properties\":{\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 129.93,
+          "width": 252.84,
+          "x": 1011.36,
+          "y": 152.76,
+          "z": 4.00
+        },
+        {
+          "config": "{\"name\":\"d9234895012be480671a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":352.92181069958843,\"y\":26.33744855967078,\"z\":1,\"width\":300.2469135802469,\"height\":300.2469135802469,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Employee_Master_TBI.Employee_Category\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(Employee_Master_TBI.EMP_ID)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"Employee_Master_TBI\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"Employee_Category\"},\"Name\":\"Employee_Master_TBI.Employee_Category\",\"NativeReferenceName\":\"Employee Category\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"EMP_ID\"}},\"Function\":5},\"Name\":\"CountNonNull(Employee_Master_TBI.EMP_ID)\",\"NativeReferenceName\":\"Count of EMP_ID\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"EMP_ID\"}},\"Function\":5}}}]},\"columnProperties\":{\"Employee_Master_TBI.Employee_Category\":{\"displayName\":\"Employee Category\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"labelStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'Both'\"}}}}}],\"legend\":[{\"properties\":{\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}},\"showTitle\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FF670F'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Employee_Master_TBI\"}},\"Property\":\"Employee_Category\"}},\"Right\":{\"Literal\":{\"Value\":\"'Temporary'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F4CA32'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Employee_Master_TBI\"}},\"Property\":\"Employee_Category\"}},\"Right\":{\"Literal\":{\"Value\":\"'Permenant'\"}}}}}]}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Category Wise Employee'\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"underline\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 300.25,
+          "width": 300.25,
+          "x": 352.92,
+          "y": 26.34,
+          "z": 1.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

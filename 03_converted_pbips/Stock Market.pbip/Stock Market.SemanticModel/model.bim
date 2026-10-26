@@ -1,0 +1,455 @@
+{
+  "name": "Stock Market Dataset",
+  "id": "2a00dbcc-bdf2-4c36-81f9-154bf443fc51",
+  "compatibilityLevel": 1604,
+  "model": {
+    "culture": "en-US",
+    "dataAccessOptions": {
+      "legacyDataSourceOptions": 1
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "tables": [
+      {
+        "name": "Extract",
+        "lineageTag": "90b442b3-2b0d-4573-8f4b-f96b0b896be0",
+        "annotations": [
+          {
+            "name": "PBI_QueryMetadata",
+            "value": "{\"QueryId\":\"8cf6449b-8edf-45f9-a6e6-043499976776\"}"
+          }
+        ],
+        "columns": [
+          {
+            "name": "F1",
+            "dataType": "Int64",
+            "sourceColumn": "F1",
+            "summarizeBy": "sum",
+            "isHidden": false,
+            "annotations": [
+              {
+                "name": "PBI_NavigationStepName",
+                "value": "Navigation"
+              },
+              {
+                "name": "PBI_DisplayFolder",
+                "value": "Data"
+              }
+            ],
+            "lineageTag": "e1b9bf03-5b8b-448e-ba30-18ee2319ce7b"
+          },
+          {
+            "name": "Date",
+            "dataType": "DateTime",
+            "sourceColumn": "Date",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "annotations": [
+              {
+                "name": "PBI_NavigationStepName",
+                "value": "Navigation"
+              },
+              {
+                "name": "PBI_DisplayFolder",
+                "value": "Data"
+              }
+            ],
+            "lineageTag": "9b5d5f6d-031f-48ea-93cf-ad6729e9d27b"
+          },
+          {
+            "name": "Open",
+            "dataType": "Double",
+            "sourceColumn": "Open",
+            "summarizeBy": "sum",
+            "isHidden": false,
+            "annotations": [
+              {
+                "name": "PBI_NavigationStepName",
+                "value": "Navigation"
+              },
+              {
+                "name": "PBI_DisplayFolder",
+                "value": "Data"
+              }
+            ],
+            "lineageTag": "e692ea4d-3e00-4e01-9b23-6e373b30c3ba"
+          },
+          {
+            "name": "High",
+            "dataType": "Double",
+            "sourceColumn": "High",
+            "summarizeBy": "sum",
+            "isHidden": false,
+            "annotations": [
+              {
+                "name": "PBI_NavigationStepName",
+                "value": "Navigation"
+              },
+              {
+                "name": "PBI_DisplayFolder",
+                "value": "Data"
+              }
+            ],
+            "lineageTag": "ebb651ad-031c-498b-8c69-a30697c611cf"
+          },
+          {
+            "name": "Low",
+            "dataType": "Double",
+            "sourceColumn": "Low",
+            "summarizeBy": "sum",
+            "isHidden": false,
+            "annotations": [
+              {
+                "name": "PBI_NavigationStepName",
+                "value": "Navigation"
+              },
+              {
+                "name": "PBI_DisplayFolder",
+                "value": "Data"
+              }
+            ],
+            "lineageTag": "8ab083f3-4de8-428a-af5a-91cfbc14785f"
+          },
+          {
+            "name": "Close",
+            "dataType": "Double",
+            "sourceColumn": "Close",
+            "summarizeBy": "sum",
+            "isHidden": false,
+            "annotations": [
+              {
+                "name": "PBI_NavigationStepName",
+                "value": "Navigation"
+              },
+              {
+                "name": "PBI_DisplayFolder",
+                "value": "Data"
+              }
+            ],
+            "lineageTag": "a48b2f36-8866-4d38-a451-9650115d32d6"
+          },
+          {
+            "name": "Adj Close",
+            "dataType": "Double",
+            "sourceColumn": "Adj Close",
+            "summarizeBy": "sum",
+            "isHidden": false,
+            "annotations": [
+              {
+                "name": "PBI_NavigationStepName",
+                "value": "Navigation"
+              },
+              {
+                "name": "PBI_DisplayFolder",
+                "value": "Data"
+              }
+            ],
+            "lineageTag": "16c42bec-fef0-4bdf-91ab-3e00407d9685"
+          },
+          {
+            "name": "Volume",
+            "dataType": "Double",
+            "sourceColumn": "Volume",
+            "summarizeBy": "sum",
+            "isHidden": false,
+            "annotations": [
+              {
+                "name": "PBI_NavigationStepName",
+                "value": "Navigation"
+              },
+              {
+                "name": "PBI_DisplayFolder",
+                "value": "Data"
+              }
+            ],
+            "lineageTag": "e0d51520-a038-42ee-9fd4-0148e4b856d2"
+          },
+          {
+            "name": "MA50",
+            "dataType": "Double",
+            "sourceColumn": "MA50",
+            "summarizeBy": "sum",
+            "isHidden": false,
+            "annotations": [
+              {
+                "name": "PBI_NavigationStepName",
+                "value": "Navigation"
+              },
+              {
+                "name": "PBI_DisplayFolder",
+                "value": "Data"
+              }
+            ],
+            "lineageTag": "4a4914bf-5446-41ed-a86b-404e7034cfe6"
+          },
+          {
+            "name": "MA200",
+            "dataType": "Double",
+            "sourceColumn": "MA200",
+            "summarizeBy": "sum",
+            "isHidden": false,
+            "annotations": [
+              {
+                "name": "PBI_NavigationStepName",
+                "value": "Navigation"
+              },
+              {
+                "name": "PBI_DisplayFolder",
+                "value": "Data"
+              }
+            ],
+            "lineageTag": "ba218525-fe4d-4988-bb4a-4e4fb7482c51"
+          },
+          {
+            "name": "Previous day close price",
+            "dataType": "Double",
+            "sourceColumn": "Previous day close price",
+            "summarizeBy": "sum",
+            "isHidden": false,
+            "annotations": [
+              {
+                "name": "PBI_NavigationStepName",
+                "value": "Navigation"
+              },
+              {
+                "name": "PBI_DisplayFolder",
+                "value": "Data"
+              }
+            ],
+            "lineageTag": "589c5589-7619-468e-9359-afcebb000e39"
+          },
+          {
+            "name": "Change in price",
+            "dataType": "Double",
+            "sourceColumn": "Change in price",
+            "summarizeBy": "sum",
+            "isHidden": false,
+            "annotations": [
+              {
+                "name": "PBI_NavigationStepName",
+                "value": "Navigation"
+              },
+              {
+                "name": "PBI_DisplayFolder",
+                "value": "Data"
+              }
+            ],
+            "lineageTag": "8b99dad1-5671-47f5-a265-064f5b30bd2e"
+          },
+          {
+            "name": "Percent change in price",
+            "dataType": "Double",
+            "sourceColumn": "Percent change in price",
+            "summarizeBy": "sum",
+            "isHidden": false,
+            "annotations": [
+              {
+                "name": "PBI_NavigationStepName",
+                "value": "Navigation"
+              },
+              {
+                "name": "PBI_DisplayFolder",
+                "value": "Data"
+              }
+            ],
+            "lineageTag": "a1c81302-8d97-4ed6-ab5c-35810e666747"
+          },
+          {
+            "name": "Previous day volume",
+            "dataType": "Double",
+            "sourceColumn": "Previous day volume",
+            "summarizeBy": "sum",
+            "isHidden": false,
+            "annotations": [
+              {
+                "name": "PBI_NavigationStepName",
+                "value": "Navigation"
+              },
+              {
+                "name": "PBI_DisplayFolder",
+                "value": "Data"
+              }
+            ],
+            "lineageTag": "97fe3df1-dd99-4661-ae7e-95c231e99418"
+          },
+          {
+            "name": "Change in volume",
+            "dataType": "Double",
+            "sourceColumn": "Change in volume",
+            "summarizeBy": "sum",
+            "isHidden": false,
+            "annotations": [
+              {
+                "name": "PBI_NavigationStepName",
+                "value": "Navigation"
+              },
+              {
+                "name": "PBI_DisplayFolder",
+                "value": "Data"
+              }
+            ],
+            "lineageTag": "794f231a-adc5-4122-9d1c-aac03bbb3165"
+          },
+          {
+            "name": "Percent change in volume",
+            "dataType": "Double",
+            "sourceColumn": "Percent change in volume",
+            "summarizeBy": "sum",
+            "isHidden": false,
+            "annotations": [
+              {
+                "name": "PBI_NavigationStepName",
+                "value": "Navigation"
+              },
+              {
+                "name": "PBI_DisplayFolder",
+                "value": "Data"
+              }
+            ],
+            "lineageTag": "098b243e-8492-4783-a046-360145875345"
+          },
+          {
+            "name": "Table Name",
+            "dataType": "String",
+            "sourceColumn": "Table Name",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "annotations": [
+              {
+                "name": "PBI_NavigationStepName",
+                "value": "Navigation"
+              },
+              {
+                "name": "PBI_DisplayFolder",
+                "value": "Data"
+              }
+            ],
+            "lineageTag": "c304d39b-7892-4059-ba46-36fe99b7eb3a"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Extract_Partition",
+            "source": {
+              "type": "m",
+              "expression": "let\n    Source = Csv.Document(File.Contents(\"D:\\veena.sharma\\My Documents\\GIT REPOSITORY\\TABLEAU_PBIP_PROJECT_ROOT_REPO\\03_converted_pbips\\Stock Market.pbip\\Stock Market.SemanticModel\\Apple Dataset.csv"\"),[Delimiter=\",\", Columns=null, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),\n    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true])\nin\n    #\"Promoted Headers\""
+            },
+            "mode": "import"
+          }
+        ],
+        "measures": [
+          {
+            "name": "F1",
+            "expression": "SUM ( 'Extract'[F1] )",
+            "dataType": "Double",
+            "displayFolder": "Measures"
+          },
+          {
+            "name": "Open",
+            "expression": "SUM ( 'Extract'[Open] )",
+            "dataType": "Double",
+            "displayFolder": "Measures"
+          },
+          {
+            "name": "High",
+            "expression": "SUM ( 'Extract'[High] )",
+            "dataType": "Double",
+            "displayFolder": "Measures"
+          },
+          {
+            "name": "Low",
+            "expression": "SUM ( 'Extract'[Low] )",
+            "dataType": "Double",
+            "displayFolder": "Measures"
+          },
+          {
+            "name": "Close",
+            "expression": "SUM ( 'Extract'[Close] )",
+            "dataType": "Double",
+            "displayFolder": "Measures"
+          },
+          {
+            "name": "Adj Close",
+            "expression": "SUM ( 'Extract'[Adj Close] )",
+            "dataType": "Double",
+            "displayFolder": "Measures"
+          },
+          {
+            "name": "Volume",
+            "expression": "SUM ( 'Extract'[Volume] )",
+            "dataType": "Double",
+            "displayFolder": "Measures"
+          },
+          {
+            "name": "MA50",
+            "expression": "SUM ( 'Extract'[MA50] )",
+            "dataType": "Double",
+            "displayFolder": "Measures"
+          },
+          {
+            "name": "MA200",
+            "expression": "SUM ( 'Extract'[MA200] )",
+            "dataType": "Double",
+            "displayFolder": "Measures"
+          },
+          {
+            "name": "Previous day close price",
+            "expression": "SUM ( 'Extract'[Previous day close price] )",
+            "dataType": "Double",
+            "displayFolder": "Measures"
+          },
+          {
+            "name": "Change in price",
+            "expression": "SUM ( 'Extract'[Change in price] )",
+            "dataType": "Double",
+            "displayFolder": "Measures"
+          },
+          {
+            "name": "Percent change in price",
+            "expression": "SUM ( 'Extract'[Percent change in price] )",
+            "dataType": "Double",
+            "displayFolder": "Measures"
+          },
+          {
+            "name": "Previous day volume",
+            "expression": "SUM ( 'Extract'[Previous day volume] )",
+            "dataType": "Double",
+            "displayFolder": "Measures"
+          },
+          {
+            "name": "Change in volume",
+            "expression": "SUM ( 'Extract'[Change in volume] )",
+            "dataType": "Double",
+            "displayFolder": "Measures"
+          },
+          {
+            "name": "Percent change in volume",
+            "expression": "SUM ( 'Extract'[Percent change in volume] )",
+            "dataType": "Double",
+            "displayFolder": "Measures"
+          }
+        ]
+      }
+    ],
+    "relationships": [],
+    "dataSources": [
+      {
+        "name": "DataSource_federated.0o6cfsf0r7anux1d06m5h0hrk1fl_9d5cc064",
+        "type": "structured",
+        "connectionDetails": {
+          "protocol": "tds",
+          "address": {
+            "server": "",
+            "database": "federated.0o6cfsf0r7anux1d06m5h0hrk1fl"
+          }
+        },
+        "credential": {
+          "AuthenticationKind": "UsernamePassword",
+          "Username": "UAT_TBI_DASHBOARD_LOGIN",
+          "Password": "UAT_TBI_DASHBOARD_LOGIN_$25#",
+          "PrivacySetting": "Organizational",
+          "EncryptedConnection": 1
+        }
+      }
+    ]
+  }
+}

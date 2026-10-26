@@ -1,0 +1,7 @@
+{
+    "DATABASE": "UAT_TBI_Dashboard",
+    "USER_NAME": "UAT_TBI_Dashboard_MGO",
+    "PASSWORD": "UAT_TBI_Dashboard_$25#",
+    "SERVER_IP": "172.24.60.50",
+    "SERVER_PORT": "37018"
+}

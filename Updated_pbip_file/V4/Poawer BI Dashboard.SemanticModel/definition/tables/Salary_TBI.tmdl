@@ -1,0 +1,152 @@
+table Salary_TBI
+	lineageTag: abe58645-1cff-4c45-863d-f9f761ed6f3d
+
+	column EMP_ID
+		dataType: string
+		lineageTag: fe6d52f5-1ff0-4c8d-9917-92b18a0a2fc3
+		summarizeBy: none
+		sourceColumn: EMP_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column EMP_NAME
+		dataType: string
+		lineageTag: 2c60bdfa-ff0e-4d42-8919-21a12675c42b
+		summarizeBy: none
+		sourceColumn: EMP_NAME
+
+		annotation SummarizationSetBy = Automatic
+
+	column DEPARTMENT
+		dataType: string
+		lineageTag: 53c2737d-20df-4d71-aab7-09c9f85047c0
+		summarizeBy: none
+		sourceColumn: DEPARTMENT
+
+		annotation SummarizationSetBy = Automatic
+
+	column Date_of_joining
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 00afa4a3-8247-4e78-8f01-4a4a965da8db
+		summarizeBy: none
+		sourceColumn: Date_of_joining
+
+		variation Variation
+			isDefault
+			relationship: fd1a8673-41ba-443b-b478-58dc76ece17f
+			defaultHierarchy: LocalDateTable_f2d53b4a-05bc-45ac-826e-2e52c7bdb39b.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Last_working_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 77a085d8-e2ab-4490-8ba7-c1ceef944e3f
+		summarizeBy: none
+		sourceColumn: Last_working_date
+
+		variation Variation
+			isDefault
+			relationship: 23a8d780-cf25-45c9-91e3-5fd13dd26905
+			defaultHierarchy: LocalDateTable_c959de03-a73c-495f-8e97-a47352cf7f15.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column YEAR_DESC
+		dataType: string
+		lineageTag: a7988dc2-b69c-4cc9-9283-1f293c0e5edd
+		summarizeBy: none
+		sourceColumn: YEAR_DESC
+
+		annotation SummarizationSetBy = Automatic
+
+	column GROSS_SALARY
+		dataType: int64
+		formatString: 0
+		lineageTag: a488a646-6771-404b-babf-53307720a153
+		summarizeBy: sum
+		sourceColumn: GROSS_SALARY
+
+		annotation SummarizationSetBy = Automatic
+
+	column MONTHLY_BONUS
+		dataType: int64
+		formatString: 0
+		lineageTag: b0ec6fec-df75-479d-8646-e51ea069a499
+		summarizeBy: sum
+		sourceColumn: MONTHLY_BONUS
+
+		annotation SummarizationSetBy = Automatic
+
+	column GRATUITY
+		dataType: int64
+		formatString: 0
+		lineageTag: f15e8a50-eaec-4b7e-b7e2-9c91b28a36a2
+		summarizeBy: sum
+		sourceColumn: GRATUITY
+
+		annotation SummarizationSetBy = Automatic
+
+	column START_MONTH
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 6c68d0af-ae02-451a-9222-35fed116f956
+		summarizeBy: none
+		sourceColumn: START_MONTH
+
+		variation Variation
+			isDefault
+			relationship: 4ab89545-fc79-4833-8bfe-529740f614ba
+			defaultHierarchy: LocalDateTable_1184baac-cb69-46c0-a305-9e953a68eafd.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column END_MONTH
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: c7b9fac0-19ad-47a7-82e2-8dcc6759132a
+		summarizeBy: none
+		sourceColumn: END_MONTH
+
+		variation Variation
+			isDefault
+			relationship: b5b2c820-3ccf-4ed2-82b2-b450d0275eee
+			defaultHierarchy: LocalDateTable_06447061-33d9-49f9-9e24-9d922186865f.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column column12
+		dataType: string
+		lineageTag: 14986f14-103c-4958-8303-5615c8482607
+		summarizeBy: none
+		sourceColumn: column12
+
+		annotation SummarizationSetBy = Automatic
+
+	column column13
+		dataType: string
+		lineageTag: 7a679982-6053-4b8e-8835-37cdad412643
+		summarizeBy: none
+		sourceColumn: column13
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Salary_TBI = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("172.19.225.120,11433", "UAT_TBI_DASHBOARD"),
+				    dbo_Salary_TBI = Source{[Schema="dbo",Item="Salary_TBI"]}[Data],
+				    #"Changed Type" = Table.TransformColumnTypes(dbo_Salary_TBI,{{"Date_of_joining", type date}, {"Last_working_date", type date}, {"GROSS_SALARY", Int64.Type}, {"MONTHLY_BONUS", Int64.Type}, {"GRATUITY", Int64.Type}, {"START_MONTH", type datetime}, {"END_MONTH", type datetime}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

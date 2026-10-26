@@ -1,0 +1,74 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 414,
+            "y": 16
+          },
+          "nodeIndex": "employee_data",
+          "nodeLineageTag": "55b0a097-50e7-4bbb-9b3b-171568485cd8",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 709,
+            "y": 111
+          },
+          "nodeIndex": "employee_engagement_survey_data",
+          "nodeLineageTag": "a1b1aed1-078a-4136-9320-19a5b2ea131c",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 156
+          },
+          "nodeIndex": "recruitment_data",
+          "nodeLineageTag": "03c86003-4a62-4d7b-b7c3-e72fae5ef9f5",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 50,
+            "y": -23
+          },
+          "nodeIndex": "training_and_development_data",
+          "nodeLineageTag": "c75cb57a-a07a-41a5-a696-ca4309ff8423",
+          "size": {
+            "height": 296,
+            "width": 234
+          },
+          "zIndex": 3
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}

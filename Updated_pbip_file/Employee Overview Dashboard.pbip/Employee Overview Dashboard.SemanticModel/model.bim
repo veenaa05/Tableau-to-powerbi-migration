@@ -1,0 +1,118 @@
+{
+    "name": "EmployeeByDeptDataset",
+    "model": {
+        "name": "Model",
+        "culture": "en-US",
+        "dataSources": [
+            {
+                "name": "federated.0dk2j4a03gtx5x1cn3xia0hhs4jx",
+                "type": "structured",
+                "connectionDetails": {
+                    "protocol": "tds",
+                    "address": {
+                        "server": "172.19.225.120,11433",
+                        "database": "UAT_TBI_DASHBOARD"
+                    }
+                },
+                "credential": {
+                    "AuthenticationKind": "UsernamePassword",
+                    "Username": "UAT_TBI_DASHBOARD_LOGIN",
+                    "Password": "UAT_TBI_DASHBOARD_LOGIN_$25#",
+                    "PrivacySetting": "Organizational",
+                    "EncryptedConnection": 1
+                }
+            }
+        ],
+        "tables": [
+            {
+                "name": "Employee_Master_TBI",
+                "columns": [
+                    {
+                        "name": "DEPARTMENT_NAME",
+                        "dataType": "string",
+                        "sourceColumn": "DEPARMENT_NAME"
+                    },
+                    {
+                        "name": "EMP_ID",
+                        "dataType": "string",
+                        "sourceColumn": "EMP_ID"
+                    },
+                    {
+                        "name": "EMP_NAME",
+                        "dataType": "string",
+                        "sourceColumn": "EMP_NAME"
+                    },
+                    {
+                        "name": "EMP_GENDER",
+                        "dataType": "string",
+                        "sourceColumn": "EMP_GENDER"
+                    },
+                    {
+                        "name": "Employee_Category",
+                        "dataType": "string",
+                        "sourceColumn": "Employee_Category"
+                    },
+                    {
+                        "name": "JOIN_DATE",
+                        "dataType": "string",
+                        "sourceColumn": "JOIN_DATE"
+                    },
+                    {
+                        "name": "BRANCH_NAME",
+                        "dataType": "string",
+                        "sourceColumn": "BRANCH_NAME"
+                    },
+                    {
+                        "name": "DESIGNATION",
+                        "dataType": "string",
+                        "sourceColumn": "DESIGNATION"
+                    },
+                    {
+                        "name": "Resident_Type",
+                        "dataType": "string",
+                        "sourceColumn": "Resident_Type"
+                    },
+                    {
+                        "name": "LAST_WORKING_DATE",
+                        "dataType": "string",
+                        "sourceColumn": "LAST_WORKING_DATE"
+                    },
+                    {
+                        "name": "BIRTH_DATE",
+                        "dataType": "string",
+                        "sourceColumn": "BIRTH_DATE"
+                    },
+                    {
+                        "name": "MARITAL_STATUS",
+                        "dataType": "string",
+                        "sourceColumn": "MARITAL_STATUS"
+                    },
+                    {
+                        "name": "RELIGION",
+                        "dataType": "string",
+                        "sourceColumn": "RELIGION"
+                    }
+                ],
+                "partitions": [
+                    {
+                        "name": "Employee_Master_TBI_Partition",
+                        "mode": "import",
+                        "source": {
+                            "type": "m",
+                            "expression": "let Source = Sql.Database(\"172.19.225.120,11433\", \"UAT_TBI_DASHBOARD\"),dbo_Employee_Master_TBI = Source{[Schema=\"dbo\",Item=\"Employee_Master_TBI\"]}[Data] in dbo_Employee_Master_TBI"
+                        }
+                    }
+                ]
+            }
+        ],
+        "relationships": [],
+        "annotations": [
+            {
+                "name": "PBI_QueryGroupings",
+                "value": "[]"
+            }
+        ],
+        "defaultPowerBIDataSourceVersion": "powerBI_V3"
+    },
+    "compatibilityLevel": 1567
+}

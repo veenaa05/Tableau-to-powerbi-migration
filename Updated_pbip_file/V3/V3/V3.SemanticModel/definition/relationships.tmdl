@@ -1,0 +1,41 @@
+relationship b5047505-9873-49ee-8e96-41bc02e50032
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Employee_Master_TBI.JOIN_DATE
+	toColumn: LocalDateTable_4a4c9333-9c19-40a9-aadf-499b17a63dfa.Date
+
+relationship 1c20c06d-0c72-4cee-aa8d-f33e99a3b7cc
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Employee_Master_TBI.LAST_WORKING_DATE
+	toColumn: LocalDateTable_7996028a-a2a9-4df9-80ee-a0b15196a970.Date
+
+relationship 3f779ec3-2c1f-49fe-afa7-2ba10908d390
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Employee_Master_TBI.BIRTH_DATE
+	toColumn: LocalDateTable_dfcd8e9e-cc98-4404-b9c4-6052cec8111b.Date
+
+relationship fd1a8673-41ba-443b-b478-58dc76ece17f
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Salary_TBI.Date_of_joining
+	toColumn: LocalDateTable_f2d53b4a-05bc-45ac-826e-2e52c7bdb39b.Date
+
+relationship 23a8d780-cf25-45c9-91e3-5fd13dd26905
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Salary_TBI.Last_working_date
+	toColumn: LocalDateTable_c959de03-a73c-495f-8e97-a47352cf7f15.Date
+
+relationship 4ab89545-fc79-4833-8bfe-529740f614ba
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Salary_TBI.START_MONTH
+	toColumn: LocalDateTable_1184baac-cb69-46c0-a305-9e953a68eafd.Date
+
+relationship b5b2c820-3ccf-4ed2-82b2-b450d0275eee
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Salary_TBI.END_MONTH
+	toColumn: LocalDateTable_06447061-33d9-49f9-9e24-9d922186865f.Date
+
+relationship AutoDetected_a63840b3-12b5-4132-9d5f-f68c449f771e
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: Salary_TBI.EMP_ID
+	toColumn: Employee_Master_TBI.EMP_ID
+

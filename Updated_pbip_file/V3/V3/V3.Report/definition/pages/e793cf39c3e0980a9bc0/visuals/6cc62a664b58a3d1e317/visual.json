@@ -1,0 +1,60 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
+  "name": "6cc62a664b58a3d1e317",
+  "position": {
+    "x": 1080.7086614173229,
+    "y": 294.09448818897641,
+    "z": 4000,
+    "height": 93.8976377952756,
+    "width": 253.34645669291339,
+    "tabOrder": 4000
+  },
+  "visual": {
+    "visualType": "slicer",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Employee_Master_TBI"
+                    }
+                  },
+                  "Property": "EMP_GENDER"
+                }
+              },
+              "queryRef": "Employee_Master_TBI.EMP_GENDER",
+              "nativeQueryRef": "Emp Gender",
+              "active": true,
+              "displayName": "Emp Gender"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "data": [
+        {
+          "properties": {
+            "mode": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Basic'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {}
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

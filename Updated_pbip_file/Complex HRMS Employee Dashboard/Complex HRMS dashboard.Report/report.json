@@ -1,0 +1,335 @@
+{
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.65\",\"type\":2}},\"activeSectionIndex\":1,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"isPersistentUserStateDisabled\":false,\"hideVisualContainerHeader\":false,\"useStylableVisualContainerHeader\":true,\"exportDataMode\":1,\"useNewFilterPaneExperience\":true,\"optOutNewFilterPaneExperience\":false,\"defaultFilterActionIsDataFilter\":false,\"useCrossReportDrillthrough\":true,\"allowChangeFilterTypes\":true,\"allowInlineExploration\":false,\"disableFilterPaneSearch\":false,\"enableDeveloperMode\":false,\"useEnhancedTooltips\":true,\"useScaledTooltips\":false,\"useDefaultAggregateDisplayName\":true,\"queryLimitOption\":6,\"customMemoryLimit\":\"1048576\",\"customTimeoutLimit\":\"225\"},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "pods": [
+    {
+      "boundSection": "a6e020c5a4f8e834fa7f",
+      "config": "{}",
+      "name": "40bbd24401777b077b22",
+      "parameters": "[{\"name\":\"0743114b56821cb7c07a\",\"boundFilter\":\"05de4fe292ab98ce4152\",\"fieldExpr\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"employee_data\"}},\"Property\":\"EmpID\"}}}]",
+      "referenceScope": 1,
+      "type": 1
+    },
+    {
+      "boundSection": "55a712ffb42da7962829",
+      "config": "{}",
+      "name": "465f6bbf17e663f0fe39",
+      "parameters": "[{\"name\":\"43c0bb6bf4a11368546b\",\"boundFilter\":\"536a0fa17cd4fd2b3805\",\"fieldExpr\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"employee_data\"}},\"Property\":\"Active Employees\"}},\"asAggregation\":true}]",
+      "type": 1
+    },
+    {
+      "boundSection": "dcbd8df8f00860193eaa",
+      "config": "{}",
+      "name": "f1880fb54c5b134f461b",
+      "parameters": "[{\"name\":\"89cf26d6dcfec416429a\",\"boundFilter\":\"21aa853dcff5f1fbd134\",\"fieldExpr\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"employee_data\"}},\"Property\":\"EmpID\"}},\"asAggregation\":true}]",
+      "referenceScope": 1,
+      "type": 1
+    }
+  ],
+  "publicCustomVisuals": [
+    "packedBubble563FBEFA65CC43A48496B6BB533D9890"
+  ],
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "system745695144905824.jpg",
+            "path": "system745695144905824.jpg",
+            "type": 100
+          },
+          {
+            "name": "system8099408041786162.jpg",
+            "path": "system8099408041786162.jpg",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Dashboard5",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "38e2b549ae57593f52b8",
+      "ordinal": 4,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"d8699549bed71f94408e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":26.666666666666668,\"y\":30,\"z\":0,\"width\":1120,\"height\":663.3333333333334,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Category\":[{\"queryRef\":\"employee_data.DepartmentType\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(employee_data.EmpID)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"employee_data\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"DepartmentType\"},\"Name\":\"employee_data.DepartmentType\",\"NativeReferenceName\":\"DepartmentType\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"EmpID\"}},\"Function\":5},\"Name\":\"CountNonNull(employee_data.EmpID)\",\"NativeReferenceName\":\"Count of EmpID\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"EmpID\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"labelStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'Data'\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Department Type'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 663.33,
+          "width": 1120.00,
+          "x": 26.67,
+          "y": 30.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"type\":2}",
+      "displayName": "Dashboard2",
+      "displayOption": 1,
+      "filters": "[{\"name\":\"536a0fa17cd4fd2b3805\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"employee_data\"}},\"Property\":\"Active Employees\"}},\"type\":\"Categorical\",\"howCreated\":5}]",
+      "height": 720.00,
+      "name": "55a712ffb42da7962829",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"57cb95dd6c937a703d32\",\"layouts\":[{\"id\":0,\"position\":{\"x\":35,\"y\":80,\"z\":0,\"width\":493.33333333333337,\"height\":625,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"employee_data.Division\"},{\"queryRef\":\"employee_data.LastName\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"employee_data\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"Division\"},\"Name\":\"employee_data.Division\",\"NativeReferenceName\":\"Division\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"LastName\"},\"Name\":\"employee_data.LastName\",\"NativeReferenceName\":\"LastName\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"LastName\"}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"356.66665270437704D\"}}}},\"selector\":{\"metadata\":\"employee_data.Division\"}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Employee Details'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 625.00,
+          "width": 493.33,
+          "x": 35.00,
+          "y": 80.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"5bc87a08e61f4672f28d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"width\":100,\"height\":40,\"z\":1000,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'back'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'Back'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 40.00,
+          "width": 100.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 1000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"type\":2}",
+      "displayName": "Dashboard1",
+      "displayOption": 1,
+      "filters": "[{\"name\":\"05de4fe292ab98ce4152\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"employee_data\"}},\"Property\":\"EmpID\"}},\"type\":\"Categorical\",\"howCreated\":5}]",
+      "height": 720.00,
+      "name": "a6e020c5a4f8e834fa7f",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"0f7b6076189fc01c7a75\",\"layouts\":[{\"id\":0,\"position\":{\"x\":26.666666666666668,\"y\":308.33333333333337,\"z\":2000,\"width\":481.6666666666667,\"height\":295,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"employee_data.DepartmentType\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(employee_data.EmpID)\"}],\"Series\":[{\"queryRef\":\"employee_data.GenderCode\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"employee_data\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"DepartmentType\"},\"Name\":\"employee_data.DepartmentType\",\"NativeReferenceName\":\"DepartmentType\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"EmpID\"}},\"Function\":5},\"Name\":\"CountNonNull(employee_data.EmpID)\",\"NativeReferenceName\":\"Count of EmpID\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"GenderCode\"},\"Name\":\"employee_data.GenderCode\",\"NativeReferenceName\":\"GenderCode\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"EmpID\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"totals\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"legend\":[{\"properties\":{\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'Right'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Department Wise Total EmployeeserCode'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 295.00,
+          "width": 481.67,
+          "x": 26.67,
+          "y": 308.33,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"468cf77d40a9c65b86b5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1136.6666666666667,\"y\":38.333333333333336,\"z\":4000,\"width\":143.33333333333334,\"height\":88.33333333333334,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"employee_data.EmployeeType\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"employee_data\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"EmployeeType\"},\"Name\":\"employee_data.EmployeeType\",\"NativeReferenceName\":\"EmployeeType\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]}}}",
+          "filters": "[{\"name\":\"119cdd176fd059b9f80e\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"employee_data\"}},\"Property\":\"EmployeeType\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"employee_data\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"EmployeeType\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Contract'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":0,\"objects\":{},\"isHiddenInViewMode\":false}]",
+          "height": 88.33,
+          "width": 143.33,
+          "x": 1136.67,
+          "y": 38.33,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"5b7beb47974119d418e2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":528.3333333333334,\"y\":308.33333333333337,\"z\":3000,\"width\":391.6666666666667,\"height\":295,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"employee_data.EmployeeType\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(employee_data.EmployeeType)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"employee_data\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"EmployeeType\"},\"Name\":\"employee_data.EmployeeType\",\"NativeReferenceName\":\"EmployeeType\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"EmployeeType\"}},\"Function\":5},\"Name\":\"CountNonNull(employee_data.EmployeeType)\",\"NativeReferenceName\":\"Count of EmployeeType\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"EmployeeType\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"labelStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'Data'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Employee Type Wise Employees'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 295.00,
+          "width": 391.67,
+          "x": 528.33,
+          "y": 308.33,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"5ed087970ecba0e47799\",\"layouts\":[{\"id\":0,\"position\":{\"x\":943.3333333333334,\"y\":308.33333333333337,\"z\":7000,\"width\":166.66666666666669,\"height\":148.33333333333334,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"system745695144905824.jpg\"}}}}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'WebUrl'\"}}},\"webUrl\":{\"expr\":{\"Literal\":{\"Value\":\"'https://onexcloud.osourceglobal.com/DMS_ITSUPPORT/'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 148.33,
+          "width": 166.67,
+          "x": 943.33,
+          "y": 308.33,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"79495d7d284260eff889\",\"layouts\":[{\"id\":0,\"position\":{\"x\":578.3333333333334,\"y\":38.333333333333336,\"z\":1000,\"width\":531.6666666666667,\"height\":248.33333333333334,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"employee_data.DepartmentType\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(employee_data.EmpID)\"}],\"Series\":[{\"queryRef\":\"employee_data.EmployeeStatus\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"employee_data\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"DepartmentType\"},\"Name\":\"employee_data.DepartmentType\",\"NativeReferenceName\":\"DepartmentType\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"EmpID\"}},\"Function\":5},\"Name\":\"CountNonNull(employee_data.EmpID)\",\"NativeReferenceName\":\"Count of EmpID\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"EmployeeStatus\"},\"Name\":\"employee_data.EmployeeStatus\",\"NativeReferenceName\":\"EmployeeStatus\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"EmpID\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"legend\":[{\"properties\":{\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'Right'\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"totals\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Department Wise Employee Status'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 248.33,
+          "width": 531.67,
+          "x": 578.33,
+          "y": 38.33,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"7b84532983d2cbe403f3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1156.6666666666667,\"y\":180,\"z\":5000,\"width\":103.33333333333334,\"height\":170,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"system8099408041786162.jpg\"}}}}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'WebUrl'\"}}},\"webUrl\":{\"expr\":{\"Literal\":{\"Value\":\"'https://onexcloud.osourceglobal.com/DMS_ITSUPPORT/'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 170.00,
+          "width": 103.33,
+          "x": 1156.67,
+          "y": 180.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"93f4ddb654c1b8bbb3a5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":26.666666666666668,\"y\":38.333333333333336,\"z\":0,\"width\":530,\"height\":248.33333333333334,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"employee_data.Division\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(employee_data.EmpID)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"employee_data\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"Division\"},\"Name\":\"employee_data.Division\",\"NativeReferenceName\":\"Division\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"EmpID\"}},\"Function\":5},\"Name\":\"CountNonNull(employee_data.EmpID)\",\"NativeReferenceName\":\"Count of EmpID\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"EmpID\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"general\":[{\"properties\":{\"keepLayerOrder\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Division Wise Employees'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 248.33,
+          "width": 530.00,
+          "x": 26.67,
+          "y": 38.33,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"b1ffc256a8a9acc4eda4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":943.3333333333334,\"y\":470,\"z\":8000,\"width\":166.66666666666669,\"height\":133.33333333333334,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"employee_data.EmployeeType\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"employee_data\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"EmployeeType\"},\"Name\":\"employee_data.EmployeeType\",\"NativeReferenceName\":\"EmployeeType\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"header\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"items\":[{\"properties\":{\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":7,\"Percent\":0}}}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"60D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Employee Type'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"null\"}}}}}}}],\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[{\"name\":\"1e615ad1b4538aa804b7\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"employee_data\"}},\"Property\":\"EmployeeType\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"employee_data\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"EmployeeType\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Contract'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":0,\"objects\":{},\"isHiddenInViewMode\":false}]",
+          "height": 133.33,
+          "width": 166.67,
+          "x": 943.33,
+          "y": 470.00,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"b58adb2c9e282f15bd0b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"width\":100,\"height\":40,\"z\":6000,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'back'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'Back'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 40.00,
+          "width": 100.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 6000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"type\":2}",
+      "displayName": "Dashboard4",
+      "displayOption": 1,
+      "filters": "[{\"name\":\"21aa853dcff5f1fbd134\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"employee_data\"}},\"Property\":\"EmpID\"}},\"type\":\"Categorical\",\"howCreated\":5}]",
+      "height": 720.00,
+      "name": "dcbd8df8f00860193eaa",
+      "ordinal": 3,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"1af37f9a5ece429e27b3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"width\":100,\"height\":40,\"z\":1000,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'back'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'Back'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 40.00,
+          "width": 100.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"d6799275d10be267b223\",\"layouts\":[{\"id\":0,\"position\":{\"x\":50,\"y\":20,\"z\":0,\"width\":353.33333333333337,\"height\":621.6666666666667,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"employee_data.LastName\"},{\"queryRef\":\"Sum(employee_data.Active Employees)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"employee_data\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"Active Employees\"}},\"Function\":0},\"Name\":\"Sum(employee_data.Active Employees)\",\"NativeReferenceName\":\"Sum of Active Employees\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"LastName\"},\"Name\":\"employee_data.LastName\",\"NativeReferenceName\":\"LastName\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"Active Employees\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"160.66666403769113D\"}}}},\"selector\":{\"metadata\":\"employee_data.LastName\"}}]},\"vcObjects\":{\"visualTooltip\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'Default'\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Active Employee Details'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 621.67,
+          "width": 353.33,
+          "x": 50.00,
+          "y": 20.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Dashboard3",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "f8a6013d633b5df4b532",
+      "ordinal": 2,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"47ab4812b9a805fff452\",\"layouts\":[{\"id\":0,\"position\":{\"x\":26.666666666666668,\"y\":126.66666666666667,\"z\":0,\"width\":435,\"height\":280,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"CountNonNull(training_and_development_data.Employee ID)\"}],\"Category\":[{\"queryRef\":\"employee_data.DepartmentType\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"training_and_development_data\",\"Type\":0},{\"Name\":\"e\",\"Entity\":\"employee_data\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Employee ID\"}},\"Function\":5},\"Name\":\"CountNonNull(training_and_development_data.Employee ID)\",\"NativeReferenceName\":\"Count of Employee ID\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"DepartmentType\"},\"Name\":\"employee_data.DepartmentType\",\"NativeReferenceName\":\"DepartmentType\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Employee ID\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Department Wise Training Status'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[{\"name\":\"f283734944cd2be35dd0\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"training_and_development_data\"}},\"Property\":\"Training Outcome\"}},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{}}]",
+          "height": 280.00,
+          "width": 435.00,
+          "x": 26.67,
+          "y": 126.67,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"67819ebc36ca72a6c5cc\",\"layouts\":[{\"id\":0,\"position\":{\"x\":481.6666666666667,\"y\":423.33333333333337,\"z\":3000,\"width\":435,\"height\":280,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"treemap\",\"projections\":{\"Group\":[{\"queryRef\":\"employee_data.TerminationType\",\"active\":true}],\"Values\":[{\"queryRef\":\"Sum(employee_data.Exit Employees)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"employee_data\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"TerminationType\"},\"Name\":\"employee_data.TerminationType\",\"NativeReferenceName\":\"TerminationType\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"Exit Employees\"}},\"Function\":0},\"Name\":\"Sum(employee_data.Exit Employees)\",\"NativeReferenceName\":\"Sum of Exit Employees\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Exit Employees With Resignation Type'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 280.00,
+          "width": 435.00,
+          "x": 481.67,
+          "y": 423.33,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"693628b4ec56a461e0db\",\"layouts\":[{\"id\":0,\"position\":{\"x\":481.6666666666667,\"y\":126.66666666666667,\"z\":1000,\"width\":435,\"height\":280,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"areaChart\",\"projections\":{\"Category\":[{\"queryRef\":\"employee_data.DepartmentType\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(employee_data.Exit Employees)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"employee_data\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"DepartmentType\"},\"Name\":\"employee_data.DepartmentType\",\"NativeReferenceName\":\"DepartmentType\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"Exit Employees\"}},\"Function\":0},\"Name\":\"Sum(employee_data.Exit Employees)\",\"NativeReferenceName\":\"Sum of Exit Employees\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"Exit Employees\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Department Wise Exit Employees'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 280.00,
+          "width": 435.00,
+          "x": 481.67,
+          "y": 126.67,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"80d59486303fb0c44cd7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":26.666666666666668,\"y\":423.33333333333337,\"z\":2000,\"width\":435,\"height\":280,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(employee_data.Exit Employees)\"}],\"Category\":[{\"queryRef\":\"employee_data.GenderCode\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"employee_data\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"Exit Employees\"}},\"Function\":0},\"Name\":\"Sum(employee_data.Exit Employees)\",\"NativeReferenceName\":\"Sum of Exit Employees\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"GenderCode\"},\"Name\":\"employee_data.GenderCode\",\"NativeReferenceName\":\"GenderCode\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"Exit Employees\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"labelStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'Both'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Gender Wise Exit Employees'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 280.00,
+          "width": 435.00,
+          "x": 26.67,
+          "y": 423.33,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"a5a7816b637186d655ca\",\"layouts\":[{\"id\":0,\"position\":{\"x\":255,\"y\":21.666666666666668,\"z\":5000,\"width\":226.66666666666669,\"height\":80,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(employee_data.Exit Employees)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"employee_data\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"Exit Employees\"}},\"Function\":0},\"Name\":\"Sum(employee_data.Exit Employees)\",\"NativeReferenceName\":\"Sum of Exit Employees\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"Exit Employees\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"25D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Exit Employees'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#AE0000'\"}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 80.00,
+          "width": 226.67,
+          "x": 255.00,
+          "y": 21.67,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"a663c8a0c3f6238947b0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":26.666666666666668,\"y\":21.666666666666668,\"z\":4000,\"width\":218.33333333333334,\"height\":80,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(employee_data.Active Employees)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"employee_data\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"Active Employees\"}},\"Function\":0},\"Name\":\"Sum(employee_data.Active Employees)\",\"NativeReferenceName\":\"Sum of Active Employees\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"Active Employees\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"25D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Active Employees'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#AE0000'\"}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 80.00,
+          "width": 218.33,
+          "x": 26.67,
+          "y": 21.67,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"ac53b2cc49231bac35dd\",\"layouts\":[{\"id\":0,\"position\":{\"x\":493.33333333333337,\"y\":21.666666666666668,\"z\":6000,\"width\":206.66666666666669,\"height\":80,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Min(employee_data.EmpID)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"employee_data\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"EmpID\"}},\"Function\":5},\"Name\":\"Min(employee_data.EmpID)\",\"NativeReferenceName\":\"Count of EmpID\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"EmpID\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"25D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Total Female'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#AE0000'\"}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}]}}}",
+          "filters": "[{\"name\":\"0d149aaab97d06ad6b28\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"employee_data\"}},\"Property\":\"GenderCode\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"employee_data\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"GenderCode\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Female'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{}}]",
+          "height": 80.00,
+          "width": 206.67,
+          "x": 493.33,
+          "y": 21.67,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"e9a38a1c2c962b99337c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":938.3333333333334,\"y\":126.66666666666667,\"z\":8000,\"width\":191.66666666666669,\"height\":280,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"training_and_development_data.Training Outcome\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"training_and_development_data\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Training Outcome\"},\"Name\":\"training_and_development_data.Training Outcome\",\"NativeReferenceName\":\"Training Outcome\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}},\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"general\":[{\"properties\":{}}],\"selection\":[{\"properties\":{\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"singleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 280.00,
+          "width": 191.67,
+          "x": 938.33,
+          "y": 126.67,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"f54896e99f953baaed66\",\"layouts\":[{\"id\":0,\"position\":{\"x\":711.6666666666667,\"y\":21.666666666666668,\"z\":7000,\"width\":205,\"height\":80,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Min(employee_data.EmpID)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"employee_data\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"EmpID\"}},\"Function\":5},\"Name\":\"Min(employee_data.EmpID)\",\"NativeReferenceName\":\"Count of EmpID\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"EmpID\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"25D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Total Male'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#AE0000'\"}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}]}}}",
+          "filters": "[{\"name\":\"7c42b8542f1dff70aba7\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"employee_data\"}},\"Property\":\"GenderCode\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"employee_data\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"GenderCode\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Male'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{}}]",
+          "height": 80.00,
+          "width": 205.00,
+          "x": 711.67,
+          "y": 21.67,
+          "z": 7000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}
